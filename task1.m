@@ -3,7 +3,7 @@ load('spydata.mat'); % This loads cPic and received
 load('training.mat'); % This loads the training sequence
 
 % Known parameters
-L = 4; % Filter order (can be tuned)
+L = 8; % Filter order (can be tuned)
 N_training = length(training); % Number of known training symbols
 
 % Build convolution matrix for the received training signal
