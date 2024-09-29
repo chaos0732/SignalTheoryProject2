@@ -1,0 +1,19 @@
+clear;
+pic = imread('kth.jpg');
+[key,cpic] = encoder(pic);%encode picture and get key, encoded picture
+
+%pass the channel
+key_distorted = ChannelDistortor(key);%get the distorted key through channel
+
+%add AWGN (to be finished)
+
+%
+
+
+%decode
+dpic = decoder(key,cpic);%decode picture with transmitted key and get the original picture
+
+
+%display
+image(dpic);
+axis square;

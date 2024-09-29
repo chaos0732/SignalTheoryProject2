@@ -1,0 +1,4 @@
+function x = MMSE(key, key_distorted, L)
+
+A = convmtx(key,L);
+x = mldivide(A(1:length(key)-L+1,:),key_distorted);

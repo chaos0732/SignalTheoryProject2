@@ -52,7 +52,7 @@ key_binary_unimodal = 2*key_binary_unimodal-1;
 training_length = 32;
 rand('twister',6327);
 training = sign(2*rand(training_length,1)-1);
-rand('twister',sum(100*clock))
+rand('twister',sum(100*clock));
 
 
 key = [training; key_binary_unimodal];
